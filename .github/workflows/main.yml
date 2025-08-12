@@ -141,12 +141,13 @@ jobs:
           cd $SDK
           git sparse-checkout set --no-cone iPhoneOS14.5.sdk
           mv *.sdk $THEOS/sdks
-          cd ~
+          cd pwd
           cd libundirect
           ./install_to_theos.sh
         env:
           THEOS: ${{ github.workspace }}/theos
           SDK: ${{ github.workspace }}/sdks
+          pwd: ${{ github.workspace }}
       - name: Install cyan
         run: pipx install --force https://github.com/asdfzxcvbn/pyzule-rw/archive/main.zip
 
