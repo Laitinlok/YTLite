@@ -143,6 +143,7 @@ jobs:
           mv *.sdk $THEOS/sdks
           cd $pwd
           cd libundirect
+          git clone https://github.com/coolstar/libhooker
           ./install_to_theos.sh
         env:
           THEOS: ${{ github.workspace }}/theos
