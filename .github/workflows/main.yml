@@ -141,7 +141,7 @@ jobs:
           cd $SDK
           git sparse-checkout set --no-cone iPhoneOS14.5.sdk
           mv *.sdk $THEOS/sdks
-          cd pwd
+          cd $pwd
           cd libundirect
           ./install_to_theos.sh
         env:
