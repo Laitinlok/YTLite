@@ -137,7 +137,7 @@ jobs:
 
       - name: libundirect
         run: |
-          git clone https://github.com/opa334/libundirect
+          git clone https://github.com/Laitinlok/libundirect
           cd $SDK
           git sparse-checkout set --no-cone iPhoneOS14.5.sdk
           mv *.sdk $THEOS/sdks
