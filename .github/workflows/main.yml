@@ -140,8 +140,11 @@ jobs:
           git clone https://github.com/opa334/libundirect
           cd $SDK
           git sparse-checkout set --no-cone iPhoneOS14.5.sdk
+          cd ~
           cd libundirect
           ./install_to_theos.sh
+          cd $SDK
+          git sparse-checkout set --no-cone iPhoneOS16.5.sdk
         env:
           THEOS: ${{ github.workspace }}/theos
           SDK: ${{ github.workspace }}/sdk
