@@ -144,7 +144,6 @@ jobs:
           cd $pwd
           cd libundirect
           wget https://raw.githubusercontent.com/coolstar/libhooker/refs/heads/master/libhooker/include/libhooker.h
-          cd ..
           ./install_to_theos.sh
         env:
           THEOS: ${{ github.workspace }}/theos
