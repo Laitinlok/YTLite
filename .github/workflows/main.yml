@@ -135,8 +135,9 @@ jobs:
         env:
           THEOS: ${{ github.workspace }}/theos
 
-      - name:libundirect
-
+      - name: libundirect
+        run: |
+          
       - name: Install cyan
         run: pipx install --force https://github.com/asdfzxcvbn/pyzule-rw/archive/main.zip
 
