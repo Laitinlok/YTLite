@@ -137,7 +137,9 @@ jobs:
 
       - name: libundirect
         run: |
-          
+          git clone https://github.com/opa334/libundirect
+          cd libundirect
+          ./install_to_theos
       - name: Install cyan
         run: pipx install --force https://github.com/asdfzxcvbn/pyzule-rw/archive/main.zip
 
